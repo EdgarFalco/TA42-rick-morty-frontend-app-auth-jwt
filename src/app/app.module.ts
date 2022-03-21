@@ -12,6 +12,9 @@ import { DetallestarjetaComponent } from './detallestarjeta/detallestarjeta.comp
 import { AddComponent } from './add/add.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { RegistroComponent } from './registro/registro.component';
+import { LoginComponent } from './login/login.component';
+import { authInterceptorProviders } from './helpers/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,8 @@ import { CommonModule } from '@angular/common';
     HomeComponent,
     DetallestarjetaComponent,
     AddComponent,
+    RegistroComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,7 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     CommonModule,
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

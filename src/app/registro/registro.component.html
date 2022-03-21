@@ -1,0 +1,34 @@
+<div class="container mt-4">
+  <div>
+    <h1>Register</h1>
+  </div>
+  <div class="submit-form">
+    <div *ngIf="!submitted">
+      <div class="mb-3">
+        <label for="identifier" class="form-label">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          id="id"
+          placeholder="Username"
+          required
+          [(ngModel)]="user.username"
+          name="id"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Password</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Password"
+          required
+          [(ngModel)]="user.password"
+          name="name"
+        />
+      </div>
+      <button (click)="newUser()" class="btn btn-success">Submit</button>
+    </div>
+  </div>
+</div>

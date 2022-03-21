@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Character } from '../models/character.model';
-import { PersonajesService } from '../personajes.service';
+import { PersonajesService } from '../services/personajes.service';
 
 @Component({
   selector: 'app-add',
