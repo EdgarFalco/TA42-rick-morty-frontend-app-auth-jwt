@@ -1,0 +1,16 @@
+.box {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+div {
+  margin: 1%;
+}
+
+.boton {
+  background-color: rgb(255, 193, 77);
+  color: black;
+  width: 100%;
+  text-align: center;
+}

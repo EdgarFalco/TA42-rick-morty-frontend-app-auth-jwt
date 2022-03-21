@@ -1,0 +1,12 @@
+<div class="box">
+  <div class="card" style="width: 18rem" *ngFor="let char of personajes">
+    <img src="{{ char.image }}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">
+        {{ char.name }}
+      </p>
+      <a class="btn boton" [routerLink]="['/tarjeta', char.id]">See more</a>
+    </div>
+  </div>
+</div>

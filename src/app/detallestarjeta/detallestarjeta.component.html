@@ -1,0 +1,36 @@
+<div class="box mt-4">
+  <div class="card" style="width: 18rem">
+    <img src="{{ personajes.image }}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{ personajes.name }}</h5>
+      <p class="card-text">
+        <b>Status: </b>{{ personajes.status }}<br />
+        <b>Species: </b>{{ personajes.species }}<br />
+        <b>Gender: </b>{{ personajes.gender }}<br />
+        <b>Origin: </b>{{ personajes.origin }}<br />
+        <b>Location: </b>{{ personajes.location }}<br />
+        <b>Id Code: </b>{{ personajes.id }}
+      </p>
+      <p class="cart-text">
+        <small class="text-muted">Last updadted 3 min ago</small>
+      </p>
+      <button class="btn btn-warning mr-2 delete" (click)="deleteCharacter()">
+        Delete
+      </button>
+      <button
+        *ngIf="personajes.status == 'Alive'"
+        class="btn btn-light mr-2 update"
+        (click)="updateStatus('Dead')"
+      >
+        Dead
+      </button>
+      <button
+        *ngIf="personajes.status == 'Dead'"
+        class="btn btn-light mr-2 update"
+        (click)="updateStatus('Alive')"
+      >
+        Alive
+      </button>
+    </div>
+  </div>
+</div>

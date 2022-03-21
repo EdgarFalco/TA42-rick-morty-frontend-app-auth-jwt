@@ -1,0 +1,16 @@
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.delete {
+  background-color: red;
+  border: none;
+  border-radius: 5%;
+  color: white;
+}
+
+.update {
+  background-color: rgb(255, 193, 77);
+  color: black;
+}
